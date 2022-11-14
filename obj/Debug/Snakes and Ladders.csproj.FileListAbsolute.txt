@@ -1,0 +1,11 @@
+C:\Users\HP\source\repos\Snakes and Ladders\bin\Debug\Snakes and Ladders.exe.config
+C:\Users\HP\source\repos\Snakes and Ladders\bin\Debug\Snakes and Ladders.exe
+C:\Users\HP\source\repos\Snakes and Ladders\bin\Debug\Snakes and Ladders.pdb
+C:\Users\HP\source\repos\Snakes and Ladders\obj\Debug\Snakes and Ladders.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\Snakes and Ladders\obj\Debug\Snakes and Ladders.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\source\repos\Snakes and Ladders\obj\Debug\Snakes_and_Ladders.Form1.resources
+C:\Users\HP\source\repos\Snakes and Ladders\obj\Debug\Snakes_and_Ladders.Properties.Resources.resources
+C:\Users\HP\source\repos\Snakes and Ladders\obj\Debug\Snakes and Ladders.csproj.GenerateResource.cache
+C:\Users\HP\source\repos\Snakes and Ladders\obj\Debug\Snakes and Ladders.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\Snakes and Ladders\obj\Debug\Snakes and Ladders.exe
+C:\Users\HP\source\repos\Snakes and Ladders\obj\Debug\Snakes and Ladders.pdb
