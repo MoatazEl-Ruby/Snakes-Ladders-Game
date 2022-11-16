@@ -50,23 +50,9 @@ namespace Snakes_and_Ladders
 
             for (int i = 0; i < DiceNumber; i++)
             {
-                if (Switch.counter1 == 100) // Fourth if Display the Winner and Close hte form
-                {
-
-                    this.pictureBox2.Location = new Point(x1 = 226, y1 = 44);
-                    MessageBox.Show($"The Winner Is Player 1");
-                    this.Close();
-
-                }
-                else if (Switch.counter2 == 100)
-                {
-                    this.pictureBox3.Location = new Point(x2 = 226, y2 = 44);
-
-                    MessageBox.Show($"The Winner Is Player 2");
-                    this.Close();
-                }
-                else
-                {
+                
+                
+                
                     if (flag2 == false) // First If  Control Which Player will Play
                     {
                         if (Switch.flag == true) // Second if Control  direction of play
@@ -118,14 +104,31 @@ namespace Snakes_and_Ladders
                             }
                         }
                     }
-                }
+                
 
                 if (textBox1.Text == "1")
                 {
                     Switch.counter1++;
-                }else if (textBox1.Text == "2")
+                }
+                else if (textBox1.Text == "2")
                 {
                     Switch.counter2++;
+                }
+
+                if (Switch.counter1 == 100) // Fourth if Display the Winner and Close the form
+                {
+
+                    this.pictureBox2.Location = new Point(x1 = 226, y1 = 44);
+                    MessageBox.Show($"The Winner Is Player 1");
+                    this.Close();
+
+                }
+                else if (Switch.counter2 == 100)
+                {
+                    this.pictureBox3.Location = new Point(x2 = 226, y2 = 44);
+
+                    MessageBox.Show($"The Winner Is Player 2");
+                    this.Close();
                 }
 
             }
