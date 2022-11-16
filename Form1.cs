@@ -14,9 +14,9 @@ namespace Snakes_and_Ladders
 {
     public partial class Form1 : Form
     {
-      
+
         private bool flag2 = true; // Display Player  No. and which player will make move 
-       
+
         public Form1()
         {
             InitializeComponent();
@@ -50,61 +50,71 @@ namespace Snakes_and_Ladders
 
             for (int i = 0; i < DiceNumber; i++)
             {
-                
-                
-                
-                    if (flag2 == false) // First If  Control Which Player will Play
+
+
+
+                if (flag2 == false) // First If  Control Which Player will Play
+                {
+                    if (Switch.flag == true) // Second if Control  direction of play
                     {
-                        if (Switch.flag == true) // Second if Control  direction of play
+
+                        x1 += 35;
+                        if (x1 > 572) // Third if control transition  from row to row 
                         {
-
-                            x1 += 35;
-                            if (x1 > 572) // Third if control transition  from row to row 
-                            {
-                                x1 = 544;
-                                y1 -= 36;
-                                Switch.flag = false;
-                            }
-                        }
-                        else if (Switch.flag == false)
-                        {
-                            x1 -= 35;
-                            if (x1 < 220)
-                            {
-
-
-                                x1 = 226;
-                                y1 -= 36;
-                               Switch.flag = true;
-
-                            }
-                        }
-
-                    }
-                    else if (flag2 == true) // Flag2 = True
-                    {
-                        if (Switch.flag7 == false)
-                        {
-                            x2 -= 35;
-                            if (x2 < 220)
-                            {
-                                x2 = 226;
-                                y2 -= 36;
-                                Switch.flag7 = true;
-                            }
-                        }
-                        else if (Switch.flag7 == true)
-                        {
-                            x2 += 35;
-                            if (x2 > 572)
-                            {
-                                x2 = 544;
-                                y2 -= 36;
-                                Switch.flag7 = false;
-                            }
+                            x1 = 544;
+                            y1 -= 36;
+                            Switch.flag = false;
                         }
                     }
-                
+                    else if (Switch.flag == false)
+                    {
+                        x1 -= 35;
+                        if (x1 < 220)
+                        {
+
+
+                            x1 = 226;
+                            y1 -= 36;
+                            Switch.flag = true;
+
+                        }
+                    }
+                    this.textBox1.ReadOnly = true;
+                    this.textBox2.ReadOnly = true;
+                    this.textBox3.ReadOnly = true;
+                    this.textBox4.ReadOnly = true;
+
+                   
+                }
+                else if (flag2 == true) // Flag2 = True
+                {
+                    if (Switch.flag7 == false)
+                    {
+                        x2 -= 35;
+                        if (x2 < 220)
+                        {
+                            x2 = 226;
+                            y2 -= 36;
+                            Switch.flag7 = true;
+                        }
+                    }
+                    else if (Switch.flag7 == true)
+                    {
+                        x2 += 35;
+                        if (x2 > 572)
+                        {
+                            x2 = 544;
+                            y2 -= 36;
+                            Switch.flag7 = false;
+                        }
+                    }
+
+                    this.textBox1.ReadOnly = true;
+                    this.textBox2.ReadOnly = true;
+                    this.textBox3.ReadOnly = true;
+                    this.textBox4.ReadOnly = true;
+                }
+
 
                 if (textBox1.Text == "1")
                 {
@@ -119,7 +129,7 @@ namespace Snakes_and_Ladders
                 {
 
                     this.pictureBox2.Location = new Point(x1 = 226, y1 = 44);
-                    MessageBox.Show($"The Winner Is Player 1");
+                    MessageBox.Show(this, "The Winner Is Player 1");
                     this.Close();
 
                 }
@@ -127,7 +137,7 @@ namespace Snakes_and_Ladders
                 {
                     this.pictureBox3.Location = new Point(x2 = 226, y2 = 44);
 
-                    MessageBox.Show($"The Winner Is Player 2");
+                    MessageBox.Show(this, "The Winner Is Player 2");
                     this.Close();
                 }
 
